@@ -1,7 +1,7 @@
 # **Problem No: 89 - Netflix Device Type (Part-2).**
 ## **Difficulty Level:** **Medium**  
 
-# **Problem Statement**  
+**Problem Statement**  
 
 In the Netflix viewing history dataset, you are tasked with identifying viewers who have a consistent viewing pattern across multiple devices. Specifically, viewers who have watched the same title on more than 1 device type.
  
