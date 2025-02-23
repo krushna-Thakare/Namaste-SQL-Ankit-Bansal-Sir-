@@ -78,7 +78,8 @@ VALUES
 
 -------------------------
 WITH RankedShows AS (
-    SELECT show_name, genre, SUM(duration_min) AS total_duration, ROW_NUMBER() OVER (PARTITION BY genre ORDER BY SUM(duration_min) DESC) AS rn
+    SELECT show_name, genre, SUM(duration_min) AS total_duration,
+    ROW_NUMBER() OVER (PARTITION BY genre ORDER BY SUM(duration_min) DESC) AS rn
     FROM ott_viewership
     WHERE  country = 'United States'
     GROUP BY show_name, genre
